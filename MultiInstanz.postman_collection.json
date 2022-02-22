@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "1a9fd8d2-ae35-4808-b842-8145746b029b",
+		"name": "Cinema",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Ticket Reqeust",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/reservation/movie/JB?seats=A1,A2&userId=max.mustermann",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"reservation",
+						"movie",
+						"JB"
+					],
+					"query": [
+						{
+							"key": "seats",
+							"value": "A1,A2"
+						},
+						{
+							"key": "userId",
+							"value": "max.mustermann"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save alternative Ticket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8089/reservation/offer/res-6a1d68d6-9980-45dd-95b8-ebe7777e57e3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"reservation",
+						"offer",
+						"res-6a1d68d6-9980-45dd-95b8-ebe7777e57e3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
