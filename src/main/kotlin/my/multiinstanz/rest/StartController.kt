@@ -19,9 +19,15 @@ class StartController(private val runtimeService: RuntimeService) {
         log.info("Starting process with list: $shoppingItems")
 
         runtimeService.startProcessInstanceByKey(
-            Process.NAME,
+            Process.SIMPLE_MULTI,
             mapOf(Process.Variables.SHOPPING_LIST to shoppingItems)
         )
+
+        /*runtimeService.startProcessInstanceByKey(
+            Process.KOMPLEX_MULTI,
+            mapOf(Process.Variables.SHOPPING_LIST to shoppingItems)
+        )*/
+
     }
 
     companion object {

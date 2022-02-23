@@ -5,7 +5,8 @@ import kotlin.reflect.jvm.isAccessible
 
 /** Process constants. */
 object Process {
-    const val NAME = "Process_Multiinstanz"
+    const val SIMPLE_MULTI = "Process_Multiinstanz"
+    const val KOMPLEX_MULTI = "Process_Multiinstanz_Komplex"
     const val FILE_NAME = "process.bpmn"
 
     /** Activity IDs of [Process]. */
