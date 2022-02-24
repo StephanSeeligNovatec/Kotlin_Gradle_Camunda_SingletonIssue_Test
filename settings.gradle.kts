@@ -1,3 +1,3 @@
 
-rootProject.name = "TestMultiinstanceLoop"
+rootProject.name = "TestSingletonBean"
 
